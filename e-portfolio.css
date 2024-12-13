@@ -81,6 +81,7 @@ body {
 
 /* Hero section styles */
 .hero-section,
+.files-section,
 .midterm-description,
 .finals-description {
   border-radius: 20px;
@@ -178,6 +179,15 @@ hr {
   margin-top: 15px;
 }
 
+.filename {
+  color: #E0E0E0;
+  font-family: 'NeueMontreal-Regular';
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: large;
+}
+
 .midterm-quizzes,
 .midterm-activities, 
 .midterm-exam,
@@ -199,7 +209,9 @@ hr {
 .midterm-activities:hover, 
 .midterm-exam:hover,
 .finals-quizzes:hover,
-.finals-exam:hover {
+.finals-exam:hover,
+.finals-exam:hover,
+.cell:hover {
   background-color: #7700ff2a;
   box-shadow: 0 0 15px rgba(177, 108, 255, 0.5);
   transition: background-color 0.5s ease;
@@ -397,6 +409,21 @@ hr {
   cursor: pointer;
 }
 
+.download-button{
+  font-family: 'NeueMontreal-Regular';
+  color: #FCFCFC;
+  height: 30px;
+  font-size: 18px;
+  border-color: #FCFCFC;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #9ffce900;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
 .switch-to-webdev {
   font-family: 'NeueMontreal-Regular';
   color: #FCFCFC;
@@ -428,6 +455,13 @@ hr {
 .contact-me-button:hover{
   background: linear-gradient(45deg, #ac38ef, #fc9ff0, #ac38ef);
   box-shadow: 0 0 15px rgba(189, 108, 255, 0.5);
+  transition: background-color 0.5s ease;
+}
+
+.download-button:hover {
+  background: linear-gradient(45deg, #ac38ef, #fc9ff0, #ac38ef);
+  box-shadow: 0 0 15px rgba(189, 108, 255, 0.5);
+  border-style: none;
   transition: background-color 0.5s ease;
 }
 
@@ -476,7 +510,19 @@ hr {
   transform: scale(1.02); 
 }
 
-
+.cell{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
